@@ -1,73 +1,41 @@
-# React + TypeScript + Vite
+# 张小账 - 智能语音记账APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+一款功能强大的语音记账应用，支持语音识别自动分类、AI消费分析、多平台消费同步。
 
-Currently, two official plugins are available:
+## 功能特点
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🎤 **语音记账** - 说话即可记录消费，自动智能分类
+- 📊 **消费分析** - AI智能分析消费行为，洞察财务状况
+- 🔗 **多平台同步** - 支持微信、淘宝、京东、抖音消费同步
+- 💳 **订阅管理** - 灵活的周/月/年订阅方案
+- 🔐 **安全可靠** - 本地数据存储，保护隐私
 
-## React Compiler
+## 技术栈
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18 + TypeScript
+- Vite 构建工具
+- TailwindCSS 样式
+- Zustand 状态管理
+- Capacitor 跨平台打包
 
-## Expanding the ESLint configuration
+## 快速开始
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# 安装依赖
+npm install
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# 开发模式
+npm run dev
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 构建生产版本
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 管理员账号
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 账号: 2729143515
+- 密码: ZL4505124TTZL
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 许可证
+
+MIT License
